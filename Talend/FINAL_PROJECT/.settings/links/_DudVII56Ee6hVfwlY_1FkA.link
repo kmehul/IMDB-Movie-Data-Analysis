@@ -1,0 +1,26 @@
+{
+  "itemId" : "_DudVII56Ee6hVfwlY_1FkA",
+  "contextList" : [ {
+    "contextName" : "dev",
+    "repoId" : "_XydO8I56Ee6hVfwlY_1FkA",
+    "parameterList" : [ {
+      "id" : "_XyrRaI56Ee6hVfwlY_1FkA",
+      "name" : "mysql_imdb_Password"
+    }, {
+      "id" : "_XyrRaY56Ee6hVfwlY_1FkA",
+      "name" : "mysql_imdb_AdditionalParams"
+    }, {
+      "id" : "_XyrRao56Ee6hVfwlY_1FkA",
+      "name" : "mysql_imdb_Port"
+    }, {
+      "id" : "_XyrRa456Ee6hVfwlY_1FkA",
+      "name" : "mysql_imdb_Database"
+    }, {
+      "id" : "_XyrRbI56Ee6hVfwlY_1FkA",
+      "name" : "mysql_imdb_Login"
+    }, {
+      "id" : "_XyrRbY56Ee6hVfwlY_1FkA",
+      "name" : "mysql_imdb_Server"
+    } ]
+  } ]
+}
