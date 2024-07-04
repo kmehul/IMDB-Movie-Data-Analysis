@@ -8,6 +8,7 @@ This project focuses on the data analysis of the IMDB dataset, which contains re
 - [Target](#target)
 - [Data Model](#data-model)
 - [Visualization](#visualization)
+- [Key Findings](#key-findings)
 - [Technologies Used](#technologies-used)
 - [Source and Final Database Files](#source-and-final-database-files)
 - [Contributors](#contributors)
@@ -52,6 +53,12 @@ The data model for this project includes various dimension and fact tables, stru
 
 ## Visualization
 The project includes visualizations created in Tableau and PowerBI to analyze and interpret trends in the data according to BI requirements. These visualizations help in understanding various metrics such as movie ratings distribution, revenue trends, genre popularity, etc.
+
+## Key Findings
+- **Top Rated Movies**: Identified the top-rated movies based on user ratings, providing insights into user preferences.
+- **Revenue Trends**: Analyzed revenue trends over the years, revealing patterns in movie box office performance.
+- **Genre Popularity**: Determined the most popular genres, helping understand trends in movie production and consumption.
+- **Seasonal Trends**: Analysis of seasonal trends in movie releases and revenues.
 
 ## Technologies Used
 - **Talend Studio**: For ETL processes.
