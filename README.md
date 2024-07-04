@@ -1,51 +1,72 @@
 # IMDB Data Analysis
 
-This Project focuses on the data analysis of the imdb dataset, which contains the records of movies, crew, and the release details of the movies.
+## Overview
+This project focuses on the data analysis of the IMDB dataset, which contains records of movies, crew, and release details. The aim is to extract data from the source database, transform and map it using Talend Studio, and create pipelines to populate the target tables in the destination database. The end goal is to create visualizations in Tableau and PowerBI for analysis and interpretation of trends based on the BI requirements.
 
-The Aim of this project is to get the data from the source database, transform and map the data using talend studio, and create pipelines so that the data populates successfully in the target tables of the destination database.
-
-The end goal of this project is to create visualizations in Tableau and PowerBI for analysis and interpretation of the trends in accordance with the BI requirements of the Project.
+## Table of Contents
+- [Source](#source)
+- [Target](#target)
+- [Data Model](#data-model)
+- [Visualization](#visualization)
+- [Technologies Used](#technologies-used)
+- [Source and Final Database Files](#source-and-final-database-files)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Source
+The source of this project is a database containing initial staging tables with various movie and crew details. The following is a list of the sources:
 
-The Source of this project is a database which contains the initial staging tables with the different movie and crew details.
+- **imdb_title_basics**: Stores details about movies.
+- **imdb_title_akas**: Tracks the release of movies across different regions.
+- **imdb_title_principals**: First table with person-to-movie connections.
+- **imdb_title_crew**: Tracks connections of movies to writers and directors.
+- **imdb_name_basics**: Details of persons connected to movies.
+- **imdb_title_ratings**: Records of movie ratings.
+- **json files**: Two files, one tracking person name changes and the other tracking movie name changes.
+- **tsv Files**: Nine files tracking the box office performance of specific movies.
 
-Following is a list of the sources:-
-
-1. **imdb_title_basics** : This table stores the details about the movie.
-2. **imdb_title_akas** : This table tracks the release of the movies across different regions.
-3. **imdb_title_principals** : This is the first table that has the person to movie connections.
-4. **imdb_title_crew** : This table tracks the connections of movies to writers and directors.
-5. **imdb_name basics** : This table has all the details of the person/people who are connected to the movies in some way.
-6. **imdb_title_ratings** : This table ocntains the records of the ratings the movies received.
-7. **json files** : There are 2 json files, the first one tracks the person name changes and the second one keeps the track of the movie name changes.
-8. **tsv Files** : There are tsv files for 9 movies, which track the box office performance of these movies.
-
-All of these files are loaded as the staging tables in the destination database using pipelines created in talend.
+All these files are loaded as staging tables in the destination database using pipelines created in Talend.
 
 ## Target
+The target database has 12 tables, resulting from mapping and splitting the stage tables to meet BI requirements. The final target tables are:
 
-The target database has 12 tables, which are a result of mapping and split from the stage tables to get the appropriate tables in the context of the BI requirements.
-
-Following is a list of the final target tables:
-
-1. **dim_date** : This table contains a specified number of date records from a specified particular date.
-2. **dim_person** : This table contains the details of every person related to the movies.
-3. **dim_movies** : This table contains the details of all the movies.
-4. **dim_profession** : This table has the record of every profession.
-5. **bridge_personprofession** : This table is the bridge table that connects the person to the profession.
-6. **dim_genre** : This table contains all the genres.
-7. **bridge_moviegenre** : This table is the bridge table that connects the movies to its genres.
-8. **dim_region** : This table has the record of all the regions.
-9. **bridge_movieregion** : This table is the bridge table that connects the movies to the regions that they were released in.
-10. **bridge_titleprincipal** : This is the bridge table that connects people to the movies that they were a part of.
-11. **fct_ratings** : This table keeps track of the ratings for the movies.
-12. **fct_movierevenue** : This table contains the box office records of the 9 movies and hence tracking their performance.
+- **dim_date**: Contains a specified number of date records from a particular start date.
+- **dim_person**: Details of every person related to movies.
+- **dim_movies**: Details of all movies.
+- **dim_profession**: Records of every profession.
+- **bridge_personprofession**: Connects persons to professions.
+- **dim_genre**: Contains all genres.
+- **bridge_moviegenre**: Connects movies to their genres.
+- **dim_region**: Records of all regions.
+- **bridge_movieregion**: Connects movies to their release regions.
+- **bridge_titleprincipal**: Connects people to movies they were part of.
+- **fct_ratings**: Tracks movie ratings.
+- **fct_movierevenue**: Box office records of nine movies, tracking their performance.
 
 ## Data Model
+The data model for this project includes various dimension and fact tables, structured to support BI analysis. It includes the following key tables:
+- **Dimension Tables**: dim_date, dim_person, dim_movies, dim_profession, dim_genre, dim_region.
+- **Fact Tables**: fct_ratings, fct_movierevenue.
+- **Bridge Tables**: bridge_personprofession, bridge_moviegenre, bridge_movieregion, bridge_titleprincipal.
+- <img src="ER Studio/Screenshots/Physical Model.png" alt="Data Model">
 
-<img src="ER Studio/Screenshots/Physical Model.png" alt="Data Model">
+## Visualization
+The project includes visualizations created in Tableau and PowerBI to analyze and interpret trends in the data according to BI requirements. These visualizations help in understanding various metrics such as movie ratings distribution, revenue trends, genre popularity, etc.
+
+## Technologies Used
+- **Talend Studio**: For ETL processes.
+- **Tableau**: For data visualization.
+- **PowerBI**: For data visualization.
+- **MySQL**: For database management.
+- **JSON**: For handling name changes.
+- **TSV**: For tracking box office performance.
 
 ## Source and Final Database Files
 
 Click [here](https://drive.google.com/drive/folders/1JCeybAu02B9q3PD-X4igESFPpuXtabbg?usp=sharing) to access the source files for this project, and [here](https://drive.google.com/file/d/1vt3Qqg_Y-5381TznE5FhzroFW4U9R6bx/view?usp=sharing) to access the complete final database file.
+
+## Contributors
+- **Kumar Mehul**: [GitHub](https://github.com/kmehul) | [LinkedIn](https://www.linkedin.com/in/kmehul992/) | kumar-mehul@outlook.com
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
