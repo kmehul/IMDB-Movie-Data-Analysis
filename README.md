@@ -48,7 +48,7 @@ The data model for this project includes various dimension and fact tables, stru
 - **Dimension Tables**: dim_date, dim_person, dim_movies, dim_profession, dim_genre, dim_region.
 - **Fact Tables**: fct_ratings, fct_movierevenue.
 - **Bridge Tables**: bridge_personprofession, bridge_moviegenre, bridge_movieregion, bridge_titleprincipal.
-- <img src="ER Studio/Screenshots/Physical Model.png" alt="Data Model">
+  <img src="ER Studio/Screenshots/Physical Model.png" alt="Data Model">
 
 ## Visualization
 The project includes visualizations created in Tableau and PowerBI to analyze and interpret trends in the data according to BI requirements. These visualizations help in understanding various metrics such as movie ratings distribution, revenue trends, genre popularity, etc.
