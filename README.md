@@ -1,4 +1,4 @@
-# IMDB Data Analysis
+# IMDB Movie Data Analysis
 
 ## Overview
 This project focuses on the data analysis of the IMDB dataset, which contains records of movies, crew, and release details. The aim is to extract data from the source database, transform and map it using Talend Studio, and create pipelines to populate the target tables in the destination database. The end goal is to create visualizations in Tableau and PowerBI for analysis and interpretation of trends based on the BI requirements.
