@@ -1,7 +1,7 @@
 # IMDB Movie Data Analysis
 
 ## Overview
-This project focuses on the data analysis of the IMDB dataset, which contains records of movies, crew, and release details. The aim is to extract data from the source database, transform and map it using Talend Studio, and create pipelines to populate the target tables in the destination database. The end goal is to create visualizations in Tableau and PowerBI for analysis and interpretation of trends based on the BI requirements.
+This project focuses on the data analysis of the IMDB dataset, which contains records of movies, crew, and release details. The aim is to extract data from the source database, transform and map it using Talend Studio, and create pipelines to populate the target tables in the destination database. The end goal is to create visualizations in Tableau for analysis and interpretation of trends based on the BI requirements.
 
 ## Table of Contents
 - [Source](#source)
@@ -52,7 +52,7 @@ The data model for this project includes various dimension and fact tables, stru
   <img src="ER Studio/Screenshots/Physical Model.png" alt="Data Model">
 
 ## Visualization
-The project includes visualizations created in Tableau and PowerBI to analyze and interpret trends in the data according to BI requirements. These visualizations help in understanding various metrics such as movie ratings distribution, revenue trends, genre popularity, etc.
+The project includes visualizations created in Tableau to analyze and interpret trends in the data according to BI requirements. These visualizations help in understanding various metrics such as movie ratings distribution, revenue trends, genre popularity, etc.
 
 ## Key Findings
 - **Top Rated Movies**: Identified the top-rated movies based on user ratings, providing insights into user preferences.
@@ -63,7 +63,6 @@ The project includes visualizations created in Tableau and PowerBI to analyze an
 ## Technologies Used
 - **Talend Studio**: For ETL processes.
 - **Tableau**: For data visualization.
-- **PowerBI**: For data visualization.
 - **MySQL**: For database management.
 - **JSON**: For handling name changes.
 - **TSV**: For tracking box office performance.
