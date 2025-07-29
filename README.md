@@ -11,7 +11,6 @@ This project focuses on the data analysis of the IMDB dataset, which contains re
 - [Key Findings](#key-findings)
 - [Technologies Used](#technologies-used)
 - [Source and Final Database Files](#source-and-final-database-files)
-- [Contributors](#contributors)
 - [License](#license)
 
 ## Source
@@ -71,8 +70,6 @@ The project includes visualizations created in Tableau to analyze and interpret 
 
 Click [here](https://1drv.ms/u/s!AvT3QVDElVmegUmSm12iOM20Qv_k?e=dgmBhb) to access the source files for this project, and [here](https://1drv.ms/u/s!AvT3QVDElVmegUooqSmDO9feP7sp?e=jytSjN) to access the complete final database file.
 
-## Contributors
-- **Kumar Mehul**: [GitHub](https://github.com/kmehul) | [LinkedIn](https://www.linkedin.com/in/kmehul992/) | kumar-mehul@outlook.com
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
