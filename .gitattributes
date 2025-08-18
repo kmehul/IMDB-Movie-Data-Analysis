@@ -1,3 +1,7 @@
 PowerBI/*.pbix filter=lfs diff=lfs merge=lfs -text
 Tableau/*.hyper filter=lfs diff=lfs merge=lfs -text
 *.twbx filter=lfs diff=lfs merge=lfs -text
+
+
+# Make sure all files are detected
+* linguist-detectable=true
